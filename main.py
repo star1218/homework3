@@ -11,12 +11,24 @@
 # # my_pow(2, 2) -> 2 * my_pow(2, 1) => 4
 # # my_pow(2, 1) => 2
 
-number=int(input("Ведите число N:"))
+# number=int(input("Ведите число N:")) #завд 2
+#
+# def star(number):
+#     if number>0:
+#         print("*",end="")
+#         star(number-1)
+#     else:
+#         print()
+# star(number)
 
-def star(number):
-    if number>0:
-        print("*",end="")
-        star(number-1)
+numbers1 = int(input("Ведите число А: "))
+numbers2 = int(input("Ведите число Б:"))
+def numbers_range(numbers1, numbers2):
+    if numbers1==numbers2:
+        return numbers1
     else:
-        print()
-star(number)
+        return numbers1 + numbers_range(numbers1 + 1,numbers2)
+print(numbers_range(numbers1,numbers2))
+
+
+
