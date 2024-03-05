@@ -20,15 +20,15 @@
 #     else:
 #         print()
 # star(number)
-
-numbers1 = int(input("Ведите число А: "))
-numbers2 = int(input("Ведите число Б:"))
-def numbers_range(numbers1, numbers2):
-    if numbers1==numbers2:
-        return numbers1
-    else:
-        return numbers1 + numbers_range(numbers1 + 1,numbers2)
-print(numbers_range(numbers1,numbers2))
+#
 
 
+# numbers1=int(input("Ведите число А: ")) #завд 3
+# numbers2=int(input("Ведите число Б:"))
+# def numbers_range(numbers1,numbers2):
+#     if numbers1==numbers2:
+#         return numbers1
+#     else:
+#         return numbers1+numbers_range(numbers1+1,numbers2)
+# print(numbers_range(numbers1,numbers2))
 
